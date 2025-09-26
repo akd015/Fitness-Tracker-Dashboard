@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container my-4">
+    <h1 class="text-center mb-4 animate__animated animate__fadeInDown">🏋️ Fitness Tracker Dashboard</h1>
+
+    <!-- Workout Log Form -->
+    <div class="card mb-4 shadow-sm animate__animated animate__fadeInUp animate__faster">
+      <div class="card-header">Add Workout</div>
+      <div class="card-body">
+        <form id="workoutForm">
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <input type="text" class="form-control" id="workoutType" placeholder="Workout Type" required>
+            </div>
+            <div class="col-md-4">
+              <input type="number" class="form-control" id="duration" placeholder="Duration (mins)" required>
+            </div>
+            <div class="col-md-4">
+              <input type="number" class="form-control" id="calories" placeholder="Calories Burned" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Workout</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Workout Log Table -->
+    <div class="card mb-4 shadow-sm animate__animated animate__fadeInUp animate__fast">
+      <div class="card-header">Workout Log</div>
+      <div class="card-body">
+        <table class="table table-hover" id="workoutTable">
+          <thead class="table-dark">
+            <tr>
+              <th>Type</th>
+              <th>Duration (mins)</th>
+              <th>Calories Burned</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Goal Setting -->
+    <div class="card mb-4 shadow-sm animate__animated animate__fadeInUp">
+      <div class="card-header">Set Fitness Goal</div>
+      <div class="card-body">
+        <form id="goalForm">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <input type="number" class="form-control" id="goalCalories" placeholder="Weekly Goal (Calories)" required>
+            </div>
+            <div class="col-md-6">
+              <input type="number" class="form-control" id="goalDuration" placeholder="Weekly Goal (Minutes)" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success">Set Goal</button>
+        </form>
+        <div class="mt-3" id="goalStatus"></div>
+      </div>
+    </div>
+
+    <!-- Progress Chart -->
+    <div class="card mb-4 shadow-sm animate__animated animate__fadeInUp animate__slower">
+      <div class="card-header">Progress Chart</div>
+      <div class="card-body">
+        <canvas id="progressChart"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

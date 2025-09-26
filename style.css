@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.card {
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#goalStatus {
+  font-weight: bold;
+  color: #198754;
+  transition: all 0.5s ease;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+  transition: background-color 0.3s ease;
+}
