@@ -3,6 +3,8 @@
 A simple **Fitness Tracker Dashboard** built with **HTML, CSS, JavaScript, Bootstrap, jQuery, and Chart.js**.  
 Users can log daily workouts, view progress charts, and set weekly fitness goals.  
 
+**Live Demo:**[Click Here!](https://akd015.github.io/Fitness-Tracker-Dashboard)
+
 ---
 
 ## 🚀 Features
